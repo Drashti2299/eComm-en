@@ -43,8 +43,14 @@ class ProductSeeder extends Seeder
             ['name' => 'LG fridge',
             'price' => '500',
             'description'=>'this is fridge with all new feature ',
-            'category' =>'refrigarater',
+            'category' =>'refrigarate',
             'gallery' =>'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwallpapercave.com%2Fsmart-tv-wallpapers&psig=AOvVaw2iqX_L3ijeB9-G3c8RWtVJ&ust=1644662040625000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCOCa4N259_UCFQAAAAAdAAAAABAD'
+            ],
+            ['name' => 'oppo moblie',
+            'price' => '500',
+            'description'=>'this is moblie with all new feature ',
+            'category' =>'moblie',
+            'gallery' =>'https://www.androidheadlines.com/2020/10/lg-wing-wallpapers-download.html'
             ]
             
         ]);

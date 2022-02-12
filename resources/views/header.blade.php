@@ -1,3 +1,8 @@
+<?php
+
+use App\Http\Controllers\ProductController;
+$total=ProductController::carttime();
+?>
 <nav class="navbar navbar-default">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -29,7 +34,7 @@
           
            <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-            <span class="caret">cart</span></a>
+            <span class="caret">cart{{$total}}</span></a>
               <ul class="dropdown-menu">
               
               </ul>

@@ -7,7 +7,7 @@
 		<div class="col-sm-4 col-sm-offset-4 custom-login">
 			<form action="login" method="POST">
   				<div class="form-group">
-  					@csrf {{method_field("POST")}} 
+  					@csrf  
   					
   				    <label for="email">Email address:</label>
 				    <input type="email" class="form-control" name="email" placeholder="Enter email" id="email">
