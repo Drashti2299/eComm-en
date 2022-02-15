@@ -1,7 +1,13 @@
 <?php
 
 use App\Http\Controllers\ProductController;
-$total=ProductController::carttime();
+$total=0;
+
+  if(Session::has('user'))
+   {
+   $total=ProductController::carttime();
+    
+  }
 ?>
 <nav class="navbar navbar-default">
     <div class="container-fluid">
@@ -29,17 +35,28 @@ $total=ProductController::carttime();
           <button type="submit" class="btn btn-default">Search</button>
         </form>
 
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="/cartlist"></a></li>
-          
-           <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-            <span class="caret">cart{{$total}}</span></a>
-              <ul class="dropdown-menu">
-              
-              </ul>
+      <ul class="nav navbar-nav navbar-right">
+          <li><a href="/cartlist">cart({{$total}})</a></li>
+          @if(Session::has('user'))
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              {{Session::get('user')['name']}}<span class="caret"></span></a>
+            
+            
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                <a class="dropdown-item" href="/logout">Log out</a>
+                
+               
+              </div>
           </li>
+
+
+        @else
+        <li><a href="/login_view">Login</a></li>
           
+        
+         @endif 
        </ul>
     
   </div>

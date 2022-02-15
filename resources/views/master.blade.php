@@ -50,6 +50,11 @@
 	.detail-img{
 		height: 200px;
 	}
+	.card-list-divider{
+		border-bottom: 1px solid #ccc;
+		margin: 20px;
+		padding-bottom: 20px;
+	}
 </style>
 
 </html>

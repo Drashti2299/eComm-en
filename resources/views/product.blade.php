@@ -49,7 +49,7 @@
 			          <h5>{{$item['name']}}</h5>
 			          
 			       </div>
-			    </a>
+			   </a>
 		       
 		   </div>
 		   @endforeach

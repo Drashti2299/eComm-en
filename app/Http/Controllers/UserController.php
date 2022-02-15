@@ -8,8 +8,11 @@ use App\Models\User;
 class UserController extends Controller
 {
     //
-    
-    public function login(Request $req)
+    public function login_view()
+    {
+        return view('login');
+    }
+    function login(Request $req)
     {
         $user= User::where(['email'=>$req->email])->first();
         if(!$user || !Hash::check($req->password,$user->password))
