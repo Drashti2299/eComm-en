@@ -55,6 +55,9 @@
 		margin: 20px;
 		padding-bottom: 20px;
 	}
+	.search-box{
+		width: 500px !important;
+	}
 </style>
 
 </html>
